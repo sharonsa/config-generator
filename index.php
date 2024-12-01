@@ -1,7 +1,6 @@
 <?php
 date_default_timezone_set('Asia/Jerusalem');
-include('/var/www/sharontools/include/functions.php');
-func_confirm_locaion();
+include('/var/www/include/functions.php');
 
 //$currentFile = $_SERVER["PHP_SELF"];
 //$parts = Explode('/', $currentFile);

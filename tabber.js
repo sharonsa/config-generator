@@ -475,7 +475,6 @@ function tabberAutomatic(tabberArgs)
       divs[i].tabber = new tabberObj(tabberArgs);
     }
   }
-  // added by sharon to fill the form from coockies (onload not working)
   fill_form();
   return this;
 }

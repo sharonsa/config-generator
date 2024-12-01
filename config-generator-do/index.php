@@ -1,17 +1,16 @@
 <?php 
 //error_reporting (E_ALL ^ E_NOTICE);
-include('/var/www/sharontools/include/functions.php');
+include('/var/www/include/functions.php');
 include("$g_path/vars.php");
-func_confirm_locaion();
 
 $todo=trim($_POST['todo']);
 
 if ($todo=="save"){
 	$filename = "config-generator-".date("m.d.y-H.i.s")."-".rand(1000000,10000000).".dat";
 	//print"<script>alert('".$filename."')</script>;";
-	write_ini_file($_POST, "/var/www/sharontools/datafiles/tools/config-generator/temp-saves/$filename");
+	write_ini_file($_POST, "/var/www/temp-saves/$filename");
 	
-	header( 'Location: http://www.sharontools.com/datafiles/tools/config-generator/temp-saves/'.$filename );
+	header( 'Location: http://www.example.com/temp-saves/'.$filename );
 	exit;
 }
 date_default_timezone_set('Asia/Jerusalem');
